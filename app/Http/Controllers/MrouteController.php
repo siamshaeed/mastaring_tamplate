@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class MrouteController extends Controller
 {
     public function homepage()
     {
-        return view('home');
+        return view('index');
     }
 
     public function about()

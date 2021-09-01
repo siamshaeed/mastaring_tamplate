@@ -8,6 +8,13 @@
         <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About</a></li>
         <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="{{route('pricing')}}">Pricing</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+            <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
