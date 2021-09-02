@@ -21,11 +21,13 @@ class MrouteController extends Controller
         return view('contact');
     }
 
-    public function pricing(){
+    public function pricing()
+    {
         return view('pricing');
     }
 
-    public function getstart(){
+    public function getstart()
+    {
         return view('getstart');
     }
 }
