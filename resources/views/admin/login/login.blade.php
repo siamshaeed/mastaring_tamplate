@@ -55,9 +55,9 @@
                       </div>
                     </div>
 
-                   <div class="form-group">
-                     <input type="submit" class="btn btn-success btn-block" value="login">
-                   </div>
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-success btn-block" value="login">
+                    </div>
 
                     <hr>
                     <a href="index.html" class="btn btn-google btn-user btn-block">
@@ -79,11 +79,8 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
   </div>
 
   <!-- Bootstrap core JavaScript-->

@@ -21,10 +21,8 @@
 </head>
 
 <body id="page-top">
-
   <!-- Page Wrapper -->
   <div id="wrapper">
-
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -35,22 +33,18 @@
         </div>
         <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
       </a>
-
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
-
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="{{route ('home')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
-
       <!-- Divider -->
       <hr class="sidebar-divider">
-
-     <!-- Nav Item - Pages Collapse Menu -->
-     <li class="nav-item">
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>Category Info</span>
@@ -62,7 +56,6 @@
           </div>
         </div>
       </li>
-
       <!-- Nav Item - Pages Collapse Menu -->
       <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -122,7 +115,6 @@
           </div>
         </div>
       </li>
-
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link" href="charts.html">
@@ -136,22 +128,18 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
       </li>
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
-
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
-
       <!-- Sidebar Message -->
       <div class="sidebar-card d-none d-lg-flex">
         <img class="sidebar-card-illustration mb-2" src="{{asset('admin/img/undraw_rocket.svg')}}" alt="...">
         <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
         <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
       </div>
-
     </ul>
     <!-- End of Sidebar -->
 
@@ -180,10 +168,8 @@
               </div>
             </div>
           </form>
-
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
               <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -203,7 +189,6 @@
                 </form>
               </div>
             </li>
-
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -252,7 +237,6 @@
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
               </div>
             </li>
-
             <!-- Nav Item - Messages -->
             <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -312,9 +296,7 @@
                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
               </div>
             </li>
-
             <div class="topbar-divider d-none d-sm-block"></div>
-
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

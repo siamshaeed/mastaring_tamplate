@@ -11,6 +11,9 @@ Add Category | Blog
   <div class="col-md-12">
     <br>
     <div class="card">
+
+     <!-- for success message -->
+      <h3 class="text-center text-success mt-2"> {{ Session::get('message') }} </h3> 
       <form action="{{ route('new-category') }}" method="post" class="form-horizontal">
         @csrf
         <div class="form-group">

@@ -1,5 +1,7 @@
-@extends('admin.master')
+<!-- ##This is admin dashbord home page -->
 
+<!-- extend to master blade  -->
+@extends('admin.master')
 <!-- for title -->
 @section('title')
 Home | Admin
