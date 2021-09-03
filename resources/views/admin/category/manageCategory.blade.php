@@ -34,12 +34,13 @@ Manage category
             </tr>
           </tfoot>
           <tbody>
+            @php($i = 1)
             @foreach($categories as $category)
             <tr>
-              <th>1</th>
+              <th>{{ $i++ }}</th>
               <td>{{ $category -> category_name }}</td>
               <td>{{ $category -> category_description }}</td>
-              <td>{{ $category -> publication_status }}</td>
+              <td>{{ $category -> publication_status == 1 ? 'Published' : 'Unpublished'}}</td>
               <td>
                 <a href="">Edit</a> | <a href="">Delete</a>
               </td>
