@@ -28,4 +28,21 @@ class CategoryController extends Controller
         'categories' => $categories
         ]);
     }
+
+    public function editCategory($id){
+         
+        return view('admin.category.editCategory',[
+            'categories' =>  Category::find($id)
+        ]);
+    }
+
+    public function updateCategory(Request $request){
+        $category = Category::find($request->id);
+        $category-> category_name = $request-> category_name;
+        $category-> category_description  = $request-> category_description	;
+        $category-> publication_status = $request-> publication_status;
+        $category-> save();
+
+        return redirect('/category/manage-category')->with('message', 'Category information update successfully '); 
+    }
 }

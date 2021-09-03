@@ -18,6 +18,8 @@ Route::get('/get_start',[MrouteController::class, 'getstart'])->name('getstarts'
 Route::get('/category/add-category',[CategoryController::class, 'addCategory'])->name('addCategory');
 Route::post('/category/new-category',[CategoryController::class, 'newCategory'])->name('new-category');
 Route::get('/category/manage-category',[CategoryController::class, 'manageCategory'])->name('manageCategory');
+Route::get('/category/edit-category/{id}',[CategoryController::class, 'editCategory'])->name('editCategory');
+Route::post('/category/update-category',[CategoryController::class, 'updateCategory'])->name('updateCategory');
 
 // Auth
 Auth::routes();

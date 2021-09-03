@@ -15,6 +15,7 @@ Manage category
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <h3 class="text-center text-success mt-2"> {{ Session::get('message') }} </h3> 
           <thead>
           <tr>
               <th>Id</th>
@@ -42,7 +43,8 @@ Manage category
               <td>{{ $category -> category_description }}</td>
               <td>{{ $category -> publication_status == 1 ? 'Published' : 'Unpublished'}}</td>
               <td>
-                <a href="">Edit</a> | <a href="">Delete</a>
+                <a href=" {{ route('editCategory',['id' =>  $category -> id]) }} ">Edit</a> ||
+                <a href="">Delete</a>
               </td>
             </tr>
             @endforeach
