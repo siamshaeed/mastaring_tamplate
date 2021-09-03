@@ -37,12 +37,15 @@ class CategoryController extends Controller
     }
 
     public function updateCategory(Request $request){
-        $category = Category::find($request->id);
-        $category-> category_name = $request-> category_name;
-        $category-> category_description  = $request-> category_description	;
-        $category-> publication_status = $request-> publication_status;
-        $category-> save();
-
+        // for connect category model
+        Category::updateCategoryInfo($request);
+         // for message show and redirect
         return redirect('/category/manage-category')->with('message', 'Category information update successfully '); 
+    }
+
+    public function deleteCategory($id){
+        $category = Category::find($id);
+        $category->delete();
+        return redirect('/category/manage-category')->with('message', 'Category information delete successfully '); 
     }
 }

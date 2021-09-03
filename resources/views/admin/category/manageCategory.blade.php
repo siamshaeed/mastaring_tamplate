@@ -10,7 +10,7 @@ Manage category
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+      <h6 class="m-0 font-weight-bold text-primary">List of Category </h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -43,8 +43,9 @@ Manage category
               <td>{{ $category -> category_description }}</td>
               <td>{{ $category -> publication_status == 1 ? 'Published' : 'Unpublished'}}</td>
               <td>
+                <!-- category id select -->
                 <a href=" {{ route('editCategory',['id' =>  $category -> id]) }} ">Edit</a> ||
-                <a href="">Delete</a>
+                <a href=" {{ route('deleteCategory',['id' =>  $category -> id]) }}">Delete</a>
               </td>
             </tr>
             @endforeach

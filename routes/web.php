@@ -20,6 +20,7 @@ Route::post('/category/new-category',[CategoryController::class, 'newCategory'])
 Route::get('/category/manage-category',[CategoryController::class, 'manageCategory'])->name('manageCategory');
 Route::get('/category/edit-category/{id}',[CategoryController::class, 'editCategory'])->name('editCategory');
 Route::post('/category/update-category',[CategoryController::class, 'updateCategory'])->name('updateCategory');
+Route::get('/category/delete-category/{id}',[CategoryController::class, 'deleteCategory'])->name('deleteCategory');
 
 // Auth
 Auth::routes();

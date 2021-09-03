@@ -31,6 +31,13 @@ class Category extends Model
 
          // ## Eloquent way : 2 ##
          Category :: create($request->all());
+    }
+    public static function updateCategoryInfo($request){
+        $category = Category::find($request->id);
+        $category-> category_name           = $request-> category_name;
+        $category-> category_description    = $request-> category_description	;
+        $category-> publication_status      = $request-> publication_status;
+        $category-> save();
 
     }
 }
