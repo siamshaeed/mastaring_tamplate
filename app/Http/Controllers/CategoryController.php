@@ -21,4 +21,11 @@ class CategoryController extends Controller
         // for message show and redirect
          return redirect('/category/add-category')->with('message', 'Category information save successfully '); 
     }
+
+    public function manageCategory(){
+        $categories = Category::all();
+        return view('admin.category.manageCategory',[
+        'categories' => $categories
+        ]);
+    }
 }

@@ -52,7 +52,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="{{route('addCategory')}}">Add Category</a>
-            <a class="collapse-item" href="cards.html">Manage Category</a>
+            <a class="collapse-item" href="{{route('manageCategory')}}">Manage Category</a>
           </div>
         </div>
       </li>
@@ -324,22 +324,19 @@
                 </form>
               </div>
             </li>
-
           </ul>
-
         </nav>
         <!-- End of Topbar -->
-
         <!-- Begin Page Content -->
         <div class="container-fluid">
           <!-- admin panel home page -->
           @yield('body')
+          <!-- manage category page -->
+          @yield('categoryBody')
         </div>
         <!-- /.container-fluid -->
-
       </div>
       <!-- End of Main Content -->
-
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">

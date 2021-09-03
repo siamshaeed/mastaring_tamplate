@@ -17,6 +17,7 @@ Route::get('/get_start',[MrouteController::class, 'getstart'])->name('getstarts'
 // Category 
 Route::get('/category/add-category',[CategoryController::class, 'addCategory'])->name('addCategory');
 Route::post('/category/new-category',[CategoryController::class, 'newCategory'])->name('new-category');
+Route::get('/category/manage-category',[CategoryController::class, 'manageCategory'])->name('manageCategory');
 
 // Auth
 Auth::routes();
