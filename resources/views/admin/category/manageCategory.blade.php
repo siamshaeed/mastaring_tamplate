@@ -45,7 +45,12 @@ Manage category
               <td>
                 <!-- category id select -->
                 <a href=" {{ route('editCategory',['id' =>  $category -> id]) }} ">Edit</a> ||
-                <a href=" {{ route('deleteCategory',['id' =>  $category -> id]) }}">Delete</a>
+                <!-- Delete data -->
+                <a href="#" onclick="event.preventDefault(); document.getElementById('deleteCategoryForm').submit();">Delete</a>
+                <form id="deleteCategoryForm" action=" {{ route('deleteCategory') }}" method="POST">
+                  @csrf
+                  <input type="hidden" value="{{ $category -> id }}" name="id">
+                </form>
               </td>
             </tr>
             @endforeach
