@@ -3,8 +3,7 @@
 use Illuminate\Support\Facades\Route; 
 use App\Http\Controllers\MrouteController;
 use App\Http\Controllers\CategoryController;
-
-
+use App\Http\Controllers\BlogController;
 
 
 // ForntEnd
@@ -24,6 +23,7 @@ Route::post('/category/delete-category',[CategoryController::class, 'deleteCateg
 
 //blog
 Route::get('/blog/add-blog',[BlogController::class, 'addBlog'])->name('addBlog');
+Route::post('/blog/new-blog',[BlogController::class, 'newBlog'])->name('newBlog');
 
 // Auth
 Auth::routes();

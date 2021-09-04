@@ -374,9 +374,17 @@
   <!-- Page level plugins -->
   <script src="{{asset('admin/vendor/chart.js/Chart.min.js')}} "></script>
 
+
+  <!-- my plugin -->
+  <script src="{{'/'}}admin/ckeditor/ckeditor.js"></script>
+	<script src="{{'/'}}admin/ckeditor/samples/js/sample.js"></script>
+
   <!-- Page level custom scripts -->
   <script src="{{asset('admin/js/demo/chart-area-demo.js')}} "></script>
   <script src="{{asset('admin/js/demo/chart-pie-demo.js')}} "></script>
+  <script>
+	initSample();
+</script>
 
 </body>
 
