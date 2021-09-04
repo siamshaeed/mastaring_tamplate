@@ -14,14 +14,14 @@ Add Blog | Blog
 
      <!-- for success message -->
       <h3 class="text-center text-success mt-2"> {{ Session::get('message') }} </h3> 
-      <form action="{{ route('newBlog') }}" method="post" class="form-horizontal">
+      <form action="{{ route('newBlog') }}" method="post" class="form-horizontal" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
           <label class="control-label col-md-3">Category Name :</label>
           <div class="col-md-9">
-            <select name="" class="form-control">
+            <select name="category_id" class="form-control">
               @foreach($categories as $category)
-              <option value=""> {{ $category->category_name}} </option>
+              <option value="{{ $category->id}}"> {{ $category->category_name}} </option>
               @endforeach
             </select>
             <!-- <input type="text" name="category_name" class="form-control" /> -->
