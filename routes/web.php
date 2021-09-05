@@ -25,6 +25,8 @@ Route::post('/category/delete-category',[CategoryController::class, 'deleteCateg
 Route::get('/blog/add-blog',[BlogController::class, 'addBlog'])->name('addBlog');
 Route::post('/blog/new-blog',[BlogController::class, 'newBlog'])->name('newBlog');
 Route::get('/blog/manage-blog',[BlogController::class, 'manageBlog'])->name('manageBlog');
+Route::get('/blog/edit-blog/{id}',[BlogController::class, 'editBlog'])->name('editBlog');
+Route::post('/blog/update-blog/',[BlogController::class, 'UpdateBlog'])->name('UpdateBlog');
 
 // Auth
 Auth::routes();

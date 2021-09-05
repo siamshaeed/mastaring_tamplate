@@ -1,4 +1,4 @@
-@extends('admin.master');
+@extends('admin.master')
 
 @section('title')
 Manage category
@@ -6,7 +6,7 @@ Manage category
 
 <!-- manage category body -->
 @section('categoryBody')
- <div class="container-fluid">
+<div class="container-fluid">
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -15,9 +15,9 @@ Manage category
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-        <h3 class="text-center text-success mt-2"> {{ Session::get('message') }} </h3> 
+          <h3 class="text-center text-success mt-2"> {{ Session::get('message') }} </h3>
           <thead>
-          <tr>
+            <tr>
               <th>SL NO</th>
               <th>Category name</th>
               <th>Blog Title</th>
@@ -37,7 +37,7 @@ Manage category
               <td>{{ $blog -> publication_status == 1 ? 'Published' : 'Unpublished'}}</td>
               <td>
                 <!-- category id select -->
-                <a href=" {{ route('editCategory',['id' =>  $blog -> id]) }} ">Edit</a> ||
+                <a href=" {{ route('editBlog',['id' =>  $blog -> id]) }} ">Edit</a> ||
                 <!-- Delete data -->
                 <a href="#" onclick="event.preventDefault(); document.getElementById('deleteCategoryForm').submit();">Delete</a>
                 <form id="deleteCategoryForm" action=" {{ route('deleteCategory') }}" method="POST">
@@ -53,6 +53,6 @@ Manage category
     </div>
   </div>
 
-  </div>
+</div>
 
-  @endsection
+@endsection
