@@ -39,8 +39,8 @@ Manage category
                 <!-- category id select -->
                 <a href=" {{ route('editBlog',['id' =>  $blog -> id]) }} ">Edit</a> ||
                 <!-- Delete data -->
-                <a href="#" onclick="event.preventDefault(); document.getElementById('deleteCategoryForm').submit();">Delete</a>
-                <form id="deleteCategoryForm" action=" {{ route('deleteCategory') }}" method="POST">
+                <a href="#" onclick="event.preventDefault(); document.getElementById('deleteBlogForm').submit();">Delete</a>
+                <form id="deleteBlogForm" action=" {{ route('deleteBlog') }}" method="POST">
                   @csrf
                   <input type="hidden" value="{{ $blog -> id }}" name="id">
                 </form>

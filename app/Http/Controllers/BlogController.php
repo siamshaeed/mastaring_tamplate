@@ -89,4 +89,11 @@ class BlogController extends Controller
         return redirect('/blog/manage-blog')->with('message', 'Blog information update successfully');
        }
     }
+
+    public function deleteBlog(Request $request){
+        $blog = Blog::find($request->id);
+        unlink($blog->blog_image);
+        $blog->delete();
+        return redirect('/blog/manage-blog')->with('message', 'Blog information delete successfully');
+    }
 }
