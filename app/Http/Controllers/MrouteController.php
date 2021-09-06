@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
 class MrouteController extends Controller
 {
     public function homepage()
     {
-        return view('index');
+        return view('index',[
+            'blogs' => Blog::where('publication_status', 1)->orderBy('id', 'desc')->get()
+        ]);
     }
 
     public function about()
