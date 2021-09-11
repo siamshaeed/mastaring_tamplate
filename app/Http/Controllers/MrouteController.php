@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class MrouteController extends Controller
@@ -10,7 +11,8 @@ class MrouteController extends Controller
     public function homepage()
     {
         return view('index', [
-            'blogs' => Blog::where('publication_status', 1)->orderBy('id', 'desc')->get()
+            'blogs' => Blog::where('publication_status', 1)->orderBy('id', 'desc')->get(),
+            'categories' => Category::where('publication_status', 1)->get()
         ]);
     }
 
